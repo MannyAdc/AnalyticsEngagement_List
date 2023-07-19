@@ -1,0 +1,221 @@
+<h1 id="purpose-of-this-document">Purpose of this document</h1>
+<p>This document summarizes my engagements in projects and tasks involving data science/analytics skillset. Due to non-disclosure agreements, most projects and tasks are unavailable for publishing. <br><br>
+<ins><strong>TIP</strong></ins>: Each project/task is tagged with keywords. Please search the <ins><strong>keywords of your interest</strong></ins> (e.g., technique, tool, process, topic).<br><br><br></p>
+<h1 id="-forecasting-all-cause-mortality-leveraging-cause-of-death-data-through-neural-networks-"><strong>Forecasting all-cause mortality: leveraging cause-of-death data through neural networks</strong></h1>
+<h2 id="-keyword-"><strong>[Keyword]</strong></h2>
+<p><ins><strong>Public Health</strong></ins>, <ins><strong>Supervised Machine Learning</strong></ins>, <ins><strong>Convolutional Neural Network (CNN)</strong></ins>, <ins><strong>Lee-Carter Model</strong></ins>, <ins><strong>Singular Value Decomposition (SVD)</strong></ins>, <ins><strong>Hyperparameter Tuning</strong></ins>, <ins><strong>Data Preprocessing</strong></ins>, <ins><strong>Data Manipulation</strong></ins>, <ins><strong>Data Management</strong></ins>, <ins><strong>Exploratory Data Analysis</strong></ins>, <ins><strong>Data Visualization</strong></ins>, <ins><strong>Data Interpretation</strong></ins>, <ins><strong>Python</strong></ins></p>
+<h2 id="-overview-"><strong>[Overview]</strong></h2>
+<p>My <strong>master&#39;s thesis</strong> was <strong>developing a new CNN-based mortality forecasting model integrating cause-of-death</strong> information using <strong>Python</strong>. The dataset was the U.S. mortality data from 1959 to 2019, initially with 6 million+ records. </p>
+<h2 id="-approach-"><strong>[Approach]</strong></h2>
+<ul>
+<li><strong>Preprocessed/cleaned</strong> the large and fragmented raw datasets (6 million+ records in total) with <strong>track and record</strong> of the process to <strong>enhance the reproducibility</strong> of the project output<ul>
+<li><strong>Documented the cleaning process visually by flowcharts</strong>, including the checks on <strong>data format</strong> and <strong>duplication</strong>, <strong>deletion</strong>, and <strong>aggregation</strong> of rows and columns</li>
+<li><strong>Made a data dictionary</strong> of the final dataset stating each variable’s description, data type, and range/options</li>
+<li>Assessed the data quality by key categories during <strong>exploratory data analysis</strong> (EDA) and <strong>visualization</strong></li>
+<li><strong>Omitted/kept abnormalities</strong> <strong>by iterating</strong> the above to avoid the potential &quot;noise&quot; while training the model</li>
+</ul>
+</li>
+<li>Developed the new CNN model and other models for comparison; the models known for weaker performance were omitted based on the findings from the past research studies<ul>
+<li>Lee-Carter models by gender separately</li>
+<li>Lee-Carter models by gender and cause-of-death information, stacked separately for each gender</li>
+<li>CNN model using gender information (1 model)</li>
+<li><strong>CNN model using gender and cause-of-death information (1 new model)</strong></li>
+<li>CNN model by gender separately</li>
+</ul>
+</li>
+<li>Assessed <strong>the model performance</strong> by a <strong>comparison</strong> table showing <strong>the training time</strong> and <strong>mean square error</strong> (MSE) values and graphs of forecast vs. actual of each model that <strong>visualized the performance per age group</strong></li>
+<li>Clarified the spot for future studies by <strong>mentioning what needed to be added to my thesis&#39;s scope</strong></li>
+</ul>
+<h2 id="-outcome-"><strong>[Outcome]</strong></h2>
+<p>The <strong>new model outperformed</strong> most compared models by the smaller total MSE value. I also presented the result to UNSW professors and research fellows and <strong>achieved high distinction</strong>. 
+(Repository: <a href="https://github.com/MannyAdc/ForecastModel_LC_ML">https://github.com/MannyAdc/ForecastModel_LC_ML</a>)<br><br><br></p>
+<h1 id="-winning-sas-institute-s-analytics-competition-and-earning-the-sas-viya-skill-certificate-"><strong>Winning SAS Institute’s analytics competition and earning the SAS Viya skill certificate</strong></h1>
+<h2 id="-keyword-"><strong>[Keyword]</strong></h2>
+<p><ins><strong>Non-Profit Organization</strong></ins>, <ins><strong>Supervised Machine Learning</strong></ins>, <ins><strong>Internship</strong></ins>, <ins><strong>Data Preprocessing</strong></ins>, <ins><strong>Exploratory Data Analysis</strong></ins>, <ins><strong>Data Visualization</strong></ins>, <ins><strong>SAS Enterprise Miner</strong></ins>, <ins><strong>1st place winner</strong></ins></p>
+<h2 id="-overview-"><strong>[Overview]</strong></h2>
+<p>Please see <a href="https://hds-hub.cbdrh.med.unsw.edu.au/posts/2023-01-13-sas-cortex/">https://hds-hub.cbdrh.med.unsw.edu.au/posts/2023-01-13-sas-cortex/</a> for details. It refers to,</p>
+<ul>
+<li>winning <strong>1st place in the SAS Cortex Analytics Simulation 5-Day Challenge</strong> in April 2022,</li>
+<li>participating in the <strong>internship program at SAS Institute Australia</strong> as the reward for the above, and achieving <strong>SAS Certified Associate: Programming Fundamentals Using SAS Viya</strong> in June 2022.<br><br><br></li>
+</ul>
+<h1 id="-investigating-women-s-employment-status-tendency-among-canadian-couples-and-families-"><strong>Investigating women’s employment status tendency among Canadian couples and families</strong></h1>
+<h2 id="-keyword-"><strong>[Keyword]</strong></h2>
+<p><ins><strong>Socioeconomics</strong></ins>, <ins><strong>Statistical Modeling/Analysis</strong></ins>, <ins><strong>Generalized Linear Model (GLM)</strong></ins>, <ins><strong>Exploratory Data Analysis</strong></ins>, <ins><strong>Data Visualization</strong></ins>, <ins><strong>R Programming</strong></ins></p>
+<h2 id="-overview-"><strong>[Overview]</strong></h2>
+<p>I analyzed<strong> the </strong>tendency of women’s employment status<strong> concerning their </strong>marital status<strong>, </strong>income of the male member in the household<strong>, </strong>presence of children<strong>, and </strong>region of residence<strong>. The dataset was based on 1977 surveys of Canadian couples and families. The model was </strong>GLM** in the binomial family since the dataset had both continuous and categorical variables.</p>
+<h2 id="-approach-"><strong>[Approach]</strong></h2>
+<ul>
+<li><strong>Exploratory data analysis</strong> (EDA) by observing the correlations, <ul>
+<li>between the outcome variable (i.e., women’s employment status) and input variables and </li>
+<li>among the input variables</li>
+</ul>
+</li>
+<li><strong>Model-fitting in various scenarios</strong>: <ul>
+<li>using all input variables, </li>
+<li>using fewer variables, </li>
+<li>using all input variables one of which interacts with other input variables, and </li>
+<li>using fewer variables and one of which interacts with remaining input variables</li>
+</ul>
+</li>
+<li><strong>Evaluation on models</strong> based on the p-value of <strong>ANOVA</strong> test, <strong>AIC</strong> score, and <strong>AUROC</strong> score</li>
+</ul>
+<h2 id="-outcome-"><strong>[Outcome]</strong></h2>
+<p>Based on the analysis, the implications were,</p>
+<ul>
+<li>the strong association of the presence of children and </li>
+<li>the slight association of male members’ income to women’s employment status. </li>
+</ul>
+<p>I <strong>achieved high distinction</strong> for this task.<br><br></p>
+<h1 id="-investigating-the-media-attention-impact-on-dispensing-contraceptives-in-australia-"><strong>Investigating the media attention impact on dispensing contraceptives in Australia</strong></h1>
+<h2 id="-keyword-"><strong>[Keyword]</strong></h2>
+<p><ins><strong>Public Health</strong></ins>, <ins><strong>Interrupted Time Series</strong></ins>, <ins><strong>ARIMA</strong></ins>, <ins><strong>Exploratory Data Analysis</strong></ins>, <ins><strong>Data Visualization</strong></ins>, <ins><strong>R Programming</strong></ins></p>
+<h2 id="-overview-"><strong>[Overview]</strong></h2>
+<p>I <strong>analyzed the media attention impact on dispensing contraceptives</strong> (combined/simple contraceptives)<strong> using </strong>R**. The dataset consisted of monthly rates (per 1000 women of reproductive age) of PBS-subsidized dispensing of combined and simple contraceptives between January 2013 and December 2016. The media attention peaked in the last week of May 2015.</p>
+<h2 id="-approach-"><strong>[Approach]</strong></h2>
+<ul>
+<li><strong>Exploratory data analysis</strong> (EDA) by decomposing each time series data (i.e., the combined or simple) to observe the trend, seasonality, outliers, stationarity, and autocorrelation</li>
+<li><strong>Log-transformation</strong> of the data for eliminating autocorrelation and non-stationarity</li>
+<li><strong>Model selection</strong> for each data based on the EDA (e.g., stationarity + no-autocorrelation à segmented time series, no-stationarity + autocorrelation à ARIMA)</li>
+<li><strong>Model fitting</strong> for each time series by iteratively testing different parameters</li>
+<li><strong>Evaluation of time series changes</strong>: step (interruption) and slope after media attention (= intervention).</li>
+<li><strong>Quantifying the above changes in tables</strong> and <strong>visualized by the actual time series against the counterfactual</strong> (simulative plot if no intervention was present)</li>
+</ul>
+<h2 id="-outcome-"><strong>[Outcome]</strong></h2>
+<p>The media impact was agreeable on the combined contraceptives based on the changes (in %) with the monthly dispensing rate confidence intervals from the step change. I <strong>achieved distinction</strong> for this task.<br><br><br></p>
+<h1 id="-predicting-the-hospital-readmission-of-diabetic-patients-"><strong>Predicting the hospital readmission of diabetic patients</strong></h1>
+<h2 id="-keyword-"><strong>[Keyword]</strong></h2>
+<p><ins><strong>Health Analytics</strong></ins>, <ins><strong>Supervised Machine Learning</strong><ins>, <ins><strong>Random Forest</strong></ins>, <ins><strong>Logistic Regression</strong></ins>, <ins><strong>Machine Learning Pipeline</strong></ins>, <ins><strong>Feature Transformation</strong></ins>, <ins><strong>Hyperparameter Tuning</strong></ins>, <ins><strong>Data Visualization</strong></ins>, <ins><strong>Python</strong></ins></p>
+<h2 id="-overview-"><strong>[Overview]</strong></h2>
+<p>I <strong>developed the algorithms to predict the risk of diabetic patients’ readmission to a hospital</strong> after discharge. The scenario was deploying the prediction algorithm for a hospital home-visit care unit, given that the operation cost is higher for readmitted patients. The dataset was a simulative electric health record data with binary labels of readmission (i.e., yes or no) and provided as “clean” data for this task. The algorithms used were <strong>logistic regression</strong> and <strong>random forest</strong>.</p>
+<h2 id="-approach-"><strong>[Approach]</strong></h2>
+<ul>
+<li><strong>Train/test split of the dataset</strong> with stratifying along the labels (target variable)</li>
+<li>Developing the following <strong>pipeline</strong> for <strong>logistic regression</strong> algorithm due to its <strong>sensitivity to the value scales</strong>:<ul>
+<li><strong>feature transformation</strong></li>
+<li>training/validation</li>
+<li><strong>hyperparameter tuning</strong></li>
+</ul>
+</li>
+<li><strong>Fitting</strong> (training/validation) with GridSearchCV on the Scikit-Learn library</li>
+<li><strong>Model evaluation</strong> by f1 scores (i.e., 2 x (precision x recall) / (precision + recall)), </li>
+<li>Observation of feature variables by <strong>SHAP</strong> (for general feature importance) and <strong>LIME</strong> (for feature importance of a single sample prediction)</li>
+</ul>
+<h2 id="-outcome-"><strong>[Outcome]</strong></h2>
+<p>I chose the random forest algorithm as the final model, given the higher scores in f1 (0.6706). Although the f1 score was not high, I concluded that the <strong>random forest algorithm was deployable</strong> given the <strong>high precision score with test data</strong> and <strong>81% higher cost efficiency</strong> with home visits <strong>per patient</strong>. I <strong>achieved distinction</strong> for the task.<br><br><br></p>
+<h1 id="-developing-the-decision-support-algorithm-for-parkinson-s-disease-early-stage-screening-"><strong>Developing the decision support algorithm for Parkinson’s disease early-stage screening</strong></h1>
+<h2 id="-keyword-"><strong>[Keyword]</strong></h2>
+<p><ins><strong>Health Analytics</strong></ins>, <ins><strong>Decision Support</strong></ins>, <ins><strong>Supervised Machine Learning</strong></ins>, <ins><strong>Logistic Regression</strong></ins>, <ins><strong>Random Forest</strong></ins>, <ins><strong>Gradient Boosting Machine (GBM)</strong></ins>, <ins><strong>Artificial Neural Network (ANN)</strong></ins>, <ins><strong>Ensemble Models</strong></ins>, <ins><strong>Machine Learning Pipeline</strong></ins>, <ins><strong>Feature Transformation</strong></ins>, <ins><strong>Hyperparameter Tuning</strong></ins>, <ins><strong>Data Visualization</strong></ins>, <ins><strong>Python</strong></ins></p>
+<h2 id="-overview-"><strong>[Overview]</strong></h2>
+<p>I <strong>developed machine learning models</strong> (final model as a <strong>decision support algorithm</strong>) <strong>for early-stage screening of Parkinson&#39;s disease patients</strong>. The dataset consisted of 252 subjects (188 patients and 64 controls) with 3 records for each subject. The algorithms used were <strong>logistic regression, random forest</strong>, <strong>GBM</strong>, <strong>ANN</strong>, <strong>Ensemble models</strong> (voting/ensemble classifiers)</p>
+<h2 id="-approach-"><strong>[Approach]</strong></h2>
+<ul>
+<li><strong>Exploratory data analysis/data preprocessing</strong> (e.g., data type check, categorical variable check for encoding, balance between patient and control numbers, train/test data split)</li>
+<li><strong>Developing models</strong> per algorithm (with pipeline construction, when necessary, e.g., for logistic regression)</li>
+<li><strong>Model evaluation</strong> by <strong>AUROC</strong>, <strong>recall</strong>, and <strong>f1</strong> scores for prediction performance and over/underfitting: minimizing the false negative rate as the top priority </li>
+</ul>
+<h2 id="-outcome-"><strong>[Outcome]</strong></h2>
+<p>Based on the model evaluation criteria above (priority in order), the <strong>random forest model</strong> was the best (AUROC: 0.8300, recall:0.97, and f1: 0.8706) and <strong>likely viable only for preliminary screening</strong> purposes. I <strong>achieved distinction</strong> for this task.<br><br><br></p>
+<h1 id="-distinguishing-the-medical-images-blood-cells-infected-or-uninfected-by-malaria-"><strong>Distinguishing the medical images (blood cells infected or uninfected by malaria)</strong></h1>
+<h2 id="-keyword-"><strong>[Keyword]</strong></h2>
+<p><ins><strong>Medical Image Analysis</strong></ins>, <ins><strong>Unsupervised Machine Learning</strong></ins>, <ins><strong>Autoencoder</strong></ins>, <ins><strong>Neural Network</strong></ins>, <ins><strong>Data Visualization</strong></ins>, <ins><strong>Python</strong></ins></p>
+<h2 id="-overview-"><strong>[Overview]</strong></h2>
+<p>I <strong>developed a classification model for the images of blood cells</strong> infected or uninfected by malaria using <strong>Python</strong>. The image data was provided as the compressed pixel data, and labels for the images were provided (both infected and uninfected images, 13,779 each).</p>
+<h2 id="-approach-"><strong>[Approach]</strong></h2>
+<ul>
+<li><strong>Developing an autoencoder</strong> (feed-forward neural network-based, <strong>unsupervised</strong>) to assess its power to distinguish the image by using a limited portion of the whole dataset (8,819 uninfected cell images) as the training data, <strong>aiming to develop a model faster and less training data</strong></li>
+<li>Assessing the performance through several <strong>data visualization</strong>: direct comparison of the actual/reconstructed images and the t-SNE cluster plot</li>
+</ul>
+<h2 id="-outcome-"><strong>[Outcome]</strong></h2>
+<p>I presented how <strong>my model could distinguish the images</strong>. I <strong>achieved distinction</strong> for the presentation.<br><br><br></p>
+<h1 id="-distinguishing-the-electroencephalogram-data-of-alcoholic-or-non-alcoholic-subjects-"><strong>Distinguishing the electroencephalogram data of alcoholic or non-alcoholic subjects</strong></h1>
+<h2 id="-keyword-"><strong>[Keyword]</strong></h2>
+<p><ins><strong>Health Analytics</strong></ins>, <ins><strong>Unsupervised Machine Learning</strong></ins>, <ins><strong>Autoencoder</strong></ins>, <ins><strong>Long-Short Term Memory (LSTM)</strong></ins>, <ins><strong>Neural Network</strong></ins>, </ins><strong>Time-Series Data</strong></ins>, <ins><strong>Data Visualization</strong></ins>, <ins><strong>Python</strong></ins></p>
+<h2 id="-overview-"><strong>[Overview]</strong></h2>
+<p>I <strong>developed an autoencoder with LSTM for electroencephalogram classification</strong> among alcoholic and control patients using Python. The dataset was from UCI Machine Learning Repository and consisted of 122 patients (120 trials for each patient and 255-step time series for each trial). </p>
+<h2 id="-approach-"><strong>[Approach]</strong></h2>
+<ul>
+<li>Narrowing the data amount to 30 patients with 30 trials (20 patients with 20 trials for model training) due to computational capacity on my platform (Google Colab)</li>
+<li>Data loading and cleaning from .gz files (per trial) to pandas data frames (saved as CSV)</li>
+<li>Constructing and training the autoencoder with LSTM cells at each layer</li>
+<li>Assessing the autoencoder’s prediction values from test datasets of alcoholic and control patients</li>
+</ul>
+<h2 id="-outcome-"><strong>[Outcome]</strong></h2>
+<p>The <strong>difference in mean square errors</strong> was distinct between the alcoholic and the control. Hence, my <strong>autoencoder was able to distinguish the data</strong>. I <strong>achieved high distinction</strong> for this task.<br><br><br></p>
+<h1 id="-developing-a-decision-support-algorithm-for-hypotensive-patient-management-in-the-icu-"><strong>Developing a decision support algorithm for hypotensive patient management in the ICU</strong></h1>
+<h2 id="-keyword-"><strong>[Keyword]</strong></h2>
+<p><ins><strong>Health Analytics</strong></ins>, <ins><strong>Decision Support</strong></ins>, <ins><strong>Reinforcement Learning</strong></ins>, <ins><strong>Unsupervised Machine Learning</strong></ins>, <ins><strong>Batch-Constrained Q-Learning (BCQL)</strong></ins>, <ins><strong>K-Means Clustering</strong></ins>, <ins><strong>Time-Series Data</strong></ins>, <ins><strong>Data Preprocessing</strong></ins>, <ins><strong>Data Visualization</strong></ins>, <ins><strong>Python</strong></ins></p>
+<h2 id="-overview-"><strong>[Overview]</strong></h2>
+<p>I developed a reinforcement learning (<strong>BCQL</strong>, hence model-free) <strong>algorithm for hypotensive patient management in the ICU</strong> using <strong>Python</strong>. The dataset consisted of vital signs, lab tests, and treatments measured over 48 hours in 3,910 patients with acute hypotension, and no new and additional real-time data was available. </p>
+<h2 id="-approach-"><strong>[Approach]</strong></h2>
+<ul>
+<li>Defining the <strong>reward</strong> function which labels the mean arterial pressure (a vital sign) in the next time step </li>
+<li>Labeling <strong>state</strong> (of each patient at each time point) by <strong>k-means clustering</strong> (i.e., <strong>unsupervised learning</strong>) <ul>
+<li>The number of clustered states resulted in 100 based on Davies Bouldin score (the lower, the better)</li>
+</ul>
+</li>
+<li>Computing a tabular state-action (treatment) <strong>value function</strong> (i.e., RL policy) </li>
+<li><strong>Evaluating the RL policy performance</strong> against the clinical policy (i.e., simply the observation dataset) and a simple Q-Learning policy (being more biased toward the initialization values of Q-policy, hence less realistic)</li>
+</ul>
+<h2 id="-outcome-"><strong>[Outcome]</strong></h2>
+<p>The developed BCQL algorithm <strong>outperformed the clinical policy</strong> based on the expected value of reward and was more realistic than the simple Q-Learning. I <strong>achieved high distinction</strong> for this task.<br><br><br></p>
+<h1 id="-extracting-the-various-specified-information-from-the-old-datasets-of-unsw-"><strong>Extracting the various specified information from the old datasets of UNSW</strong></h1>
+<h2 id="-keyword-"><strong>[Keyword]</strong></h2>
+<p><ins><strong>PostgreSQL</strong></ins>, <ins><strong>SQL</strong></ins>, <ins><strong>Data Extraction</strong></ins>, <ins><strong>Data retrieval</strong></ins></p>
+<h2 id="-overview-"><strong>[Overview]</strong></h2>
+<p>Using the relational schema (57 data tables) about the information (e.g., people, program/course/class enrolment, facility, organization) from my university, I developed <strong>PostgreSQL codes</strong> to generate <strong>views</strong>, <strong>tables</strong>, and <strong>functions</strong> which take user inputs based on the task requirements.</p>
+<h2 id="-outcome-"><strong>[Outcome]</strong></h2>
+<p>I <strong>achieved high distinction</strong> for this task.<br><br><br></p>
+<h1 id="-developing-the-microsoft-excel-based-analysis-tools-business-setting-"><strong>Developing the Microsoft Excel-based analysis tools (business setting)</strong></h1>
+<h2 id="-keyword-"><strong>[Keyword]</strong></h2>
+<p><ins><strong>Data Manipulation</strong></ins>, <ins><strong>Data Visualization</strong><ins>, <ins><strong>Master Data Management</strong></ins>, <ins><strong>Sales Forecast</strong></ins>, <ins><strong>Managerial Accounting</strong></ins>, <ins><strong>MS Excel</strong></ins></p>
+<h2 id="-overview-"><strong>[Overview]</strong></h2>
+<p>At a medical device company, I developed <strong>MS Excel-based analysis tools</strong> complimentary to BI dashboards; for example,</p>
+<ul>
+<li>intragroup sales/cost forecast by items (from global headquarter to overseas affiliates), </li>
+<li>master data check file for annual maintenance, and </li>
+<li>revenue/profit breakdown simulation in various currency rates. </li>
+</ul>
+<p>The purpose was to enhance the flexibility of analysis operation while optimally standardizing the tools for efficient and consistent usage. Some used functions are <strong>vlookup</strong>, <strong>hlookup</strong>, <strong>index</strong>, <strong>indirect</strong>, <strong>subtotal</strong>, <strong>concatenate</strong>, <strong>pivot table</strong>, and <strong>pivot graph</strong>.<br><br><br></p>
+<h1 id="-developing-and-implementing-bi-dashboard-business-setting-"><strong>Developing and Implementing BI dashboard (business setting)</strong></h1>
+<h2 id="-keyword-"><strong>[Keyword]</strong></h2>
+<p><ins><strong>BI dashboard</strong></ins>, <ins><strong>Process Automation</strong></ins>, <ins><strong>Data Visualization</strong></ins>, <ins><strong>SAP Business Object 4.0 Web Intelligence</strong></ins></p>
+<h2 id="-overview-"><strong>[Overview]</strong></h2>
+<p>At a medical device company, I <strong>developed and delivered a BI dashboard using SAP Business Objects 4.0 Web Intelligence</strong>. This　responsibility started as a project of re-engineering the financial data analysis/reporting, which initially required an entirely manual process in Excel sheets before the data analysis with frequent errors (e.g., incorrect copy/paste, inconsistent version control). </p>
+<h2 id="-approach-solution-"><strong>[Approach/solution]</strong></h2>
+<p>I have provided the BI dashboard and complimentary data extraction/checking tools to standardize and semi-automate the data preprocessing and <strong>visualize the financial data (e.g., by time, subsidiary, and business field)</strong>. </p>
+<h2 id="-outcome-"><strong>[Outcome]</strong></h2>
+<p>Although the data granularity was often insufficient to create sophisticated analytical outputs given that the individual transaction level data was not publishable for multiple stakeholders, I still <strong>delivered the frequently missed observation points (e.g., trend, irregularity, potentially incorrect data, false abnormality) through BI dashboard delivery</strong>. In addition, I was <strong>awarded by the Executive Vice President (head of division) for the 50%+ reduction of the existing analytics workload</strong> of stakeholders in Japan. Overall, I <strong>engaged in the project for three and a half years</strong>, including the initial processes (e.g., user requirement identification) and post-project engagement for ad-hoc requests.<br><br><br></p>
+<h1 id="-data-entry-administration-and-migration-business-setting-"><strong>Data entry, administration, and migration (business setting)</strong></h1>
+<h2 id="-keyword-"><strong>[Keyword]</strong></h2>
+<p><ins><strong>Data Entry</strong></ins>, <ins><strong>Data Administration</strong></ins>, <ins><strong>Data Migration</strong></ins>, <ins><strong>Data Warehouse</strong></ins>, <ins><strong>MS Excel</strong></ins></p>
+<h2 id="-overview-"><strong>[Overview]</strong></h2>
+<p>At a medical device company, I <strong>engaged in data entry, administration, and migration</strong> as part of financial analysis operation re-engineering through BI dashboard development and implementation. </p>
+<h2 id="-issues-challenges-"><strong>[Issues/challenges]</strong></h2>
+<p>The monthly financial reporting data (base data) did not have the granularity required for complete analysis. Initially, the data gathering and processing schemes for those “non-base” data were neither standardized nor automated (e.g., excel sheets in inconsistent form, calculation error during consolidation). </p>
+<h2 id="-approach-solution-"><strong>[Approach/solution]</strong></h2>
+<ul>
+<li>I developed the <strong>scheme and tools that partially standardized and automated the data entry and administration processes</strong> through <strong>templates</strong> and <strong>rules</strong> for routine data updates. Along with the implementation, I <strong>cleansed</strong> the past “non-base” data to align the templates and rules and then <strong>migrated it into the data warehouse</strong>, where the BI dashboard retrieved the data. </li>
+<li>I <strong>documented the data cleaning process as manuals</strong> with figures and <strong>succeeded the task to other colleagues</strong> to establish the routine operation. Overall, I <strong>engaged in the tasks for around three years</strong>, including routine operation, task succession, and supervision.<br><br><br></li>
+</ul>
+<h1 id="-consulting-a-small-company-by-delivering-actionable-insights-from-numbers-business-setting-"><strong>Consulting a small company by delivering actionable insights from numbers (business setting)</strong></h1>
+<h2 id="-keyword-"><strong>[Keyword]</strong></h2>
+<p><ins><strong>Retail Business</strong></ins>, <ins><strong>Small Business Consulting</strong></ins>, <ins><strong>Financial Simulation</strong></ins>, <ins><strong>Managerial Accounting</strong></ins>, <ins><strong>Business Planning</strong></ins>, <ins><strong>Data Visualization</strong></ins>, <ins><strong>MS Excel</strong></ins>, <ins><strong>MS PowerPoint</strong></ins>, <ins><strong>MS Word</strong></ins></p>
+<h2 id="-overview-"><strong>[Overview]</strong></h2>
+<p>I consulted a small company who initially feared their business termination due to their significant staff shortage. I engaged in this project for nine months, parallel to projects with other clients.</p>
+<h2 id="-approach-solution-"><strong>[Approach/Solution]</strong></h2>
+<p>I analyzed numerically and visually their P/L and BS to quantify the possibility, measures, and potential risk of CF shortage. It required me to estimate </p>
+<ul>
+<li>the minimum viable revenue, </li>
+<li>the operation cost and cash flow, </li>
+<li>production capacity for sales at the store and to their distributors, and </li>
+<li>the condition of the client&#39;s staff members. </li>
+</ul>
+<p>I then advised the client that they could maintain their business by </p>
+<ul>
+<li>reducing the business day/hours, </li>
+<li>temporarily discontinuing sales to their distributors, </li>
+<li>clarifying the time leeway before the cash flow shortage, and </li>
+<li>collaborating with another advisory team for job postings. </li>
+</ul>
+<h2 id="-outcome-"><strong>[Outcome]</strong></h2>
+<p>As a result, the client could maintain their businesses.</p>
