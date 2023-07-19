@@ -1,4 +1,4 @@
-# This document summarizes my engagements in projects and tasks involving data science/analytics skillset. Due to non-disclosure agreements, most projects and tasks are unavailable for publishing. Please refer to this document for details of my data science/analytics experience.
+### This document summarizes my engagements in projects and tasks involving data science/analytics skillset. Due to non-disclosure agreements, most projects and tasks are unavailable for publishing. Please refer to this document for details of my data science/analytics experience.
 
 ` `**Forecasting all-cause mortality: leveraging cause-of-death data through neural networks**
 
