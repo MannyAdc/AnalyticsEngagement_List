@@ -1,11 +1,7 @@
 # Purpose of this document
 
-This document summarizes my engagements in projects and tasks involving data science/analytics skillset. Due to non-disclosure agreements, most projects and tasks are unavailable for publishing.
-
-
-# Tip
-
-Each project/task is tagged with keywords. Please search the keywords of your interest (e.g., technique, tool, process, topic).
+This document summarizes my engagements in projects and tasks involving data science/analytics skillset. Due to non-disclosure agreements, most projects and tasks are unavailable for publishing. <br><br>
+<ins>**TIP**</ins>: Each project/task is tagged with keywords. Please search the <ins>**keywords of your interest**</ins> (e.g., technique, tool, process, topic).
 
 
 # **Forecasting all-cause mortality: leveraging cause-of-death data through neural networks**
