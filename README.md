@@ -1,5 +1,5 @@
 # Please access https://mannyadc.github.io/DS_A_Showcase/
-Direct access to this repository was intended until the above GitHub page was constructed. I will update the contents when necessary.
+Direct access to this repository was intended until the above GitHub page was constructed. I will make sure to update the contents when necessary.
 
 # Overview
 The above summarizes my engagement in projects and tasks involving data science/analytics skillset since most projects and tasks are unavailable for publishing due to confidentiality restrictions.
