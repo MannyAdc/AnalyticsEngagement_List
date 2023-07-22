@@ -2,7 +2,7 @@
 
 ## **[Keyword]**
 
-Socioeconomics, Statistical Modeling/Analysis, Generalized Linear Model (GLM), Exploratory Data Analysis, Data Visualization, R Programming
+<ins>Socioeconomics</ins>, <ins>Statistical Modeling/Analysis</ins>, <ins>Generalized Linear Model (GLM)</ins>, <ins>Exploratory Data Analysis</ins>, <ins>Data Visualization</ins>, <ins>R Programming</ins>
 
 ## **[Overview]**
 
